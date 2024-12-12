@@ -14,5 +14,19 @@ export default defineConfig({
     setupFiles: ['./src/setupTests.ts'],
     include: ['src/**/*.{test,spec}.{ts,tsx}'],
     exclude: ['node_modules'],
+    coverage: {
+      all: false,
+      enabled: true,
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      exclude: [
+        'dist',
+        'node_modules',
+        'src/**/*.d.ts',
+        'src/**/index.{js,jsx,ts,tsx}',
+        'src/**/*.stories.{js,jsx,ts,tsx}',
+        'src/**/*.test.{js,jsx,ts,tsx}',
+      ],
+    },
   },
 });

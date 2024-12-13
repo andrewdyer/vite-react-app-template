@@ -3,9 +3,12 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 
 import { App } from '@/core';
+import { enableMocking } from '@/utilities';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+enableMocking().then(() => {
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
+});

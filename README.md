@@ -6,6 +6,7 @@ This template is built using the official Vite template for React with TypeScrip
 
 - [Vitest](https://vitest.dev/) for unit testing, along with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing React components, Vitest UI, and coverage reports.
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
+- [MSW](https://mswjs.io/) (Mock Service Worker) for API mocking during development and testing.
 - [React Router](https://reactrouter.com/) for routing with `react-router-dom`.
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
 - [Prettier](https://prettier.io/) for code formatting.

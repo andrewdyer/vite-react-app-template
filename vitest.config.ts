@@ -24,6 +24,7 @@ export default defineConfig({
         'src/**/index.{js,jsx,ts,tsx}',
         'src/**/*.stories.{js,jsx,ts,tsx}',
         'src/**/*.test.{js,jsx,ts,tsx}',
+        'src/mocks/**/*.ts',
       ],
     },
   },

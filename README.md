@@ -9,7 +9,7 @@ This template is built using the official Vite template for React with TypeScrip
 - [React Router](https://reactrouter.com/) for routing with `react-router-dom`.
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
 - [Prettier](https://prettier.io/) for code formatting.
-- [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting and testing before commits.
+- [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting, formatting, and testing before commits.
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing and building.
 
 ## Project Structure

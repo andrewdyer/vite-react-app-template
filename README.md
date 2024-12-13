@@ -54,7 +54,7 @@ The `@` alias points to `src/app/` for core application logic, `@shared` is used
 
 ## Available Scripts
 
-### `yarn dev`
+### `yarn start`
 
 Starts the development server using Vite.
 

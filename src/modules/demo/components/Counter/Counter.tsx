@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { Button } from '@shared/components';
+
 import './Counter.css';
 
 const Counter = () => {
@@ -7,9 +9,10 @@ const Counter = () => {
 
   return (
     <div className="card">
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
+      <Button
+        onClick={() => setCount((count) => count + 1)}
+        label={`count is ${count}`}
+      />
       <p>
         Edit <code>src/modules/demo/components/Counter/Counter.tsx</code> and
         save to test HMR

@@ -1,9 +1,15 @@
-import { HomePage } from '@demo/pages';
+import { BrowserRouter } from 'react-router-dom';
+
+import { Router } from '@/core';
 
 import './App.css';
 
 function App() {
-  return <HomePage />;
+  return (
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
 }
 
 export default App;

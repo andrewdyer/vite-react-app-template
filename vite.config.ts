@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react-swc';
-import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
 export const alias = {
   '@': resolve(__dirname, 'src/app'),
@@ -9,7 +10,7 @@ export const alias = {
 };
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), VitePWA({ registerType: 'autoUpdate' })],
   resolve: {
     alias,
   },

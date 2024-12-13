@@ -14,25 +14,25 @@ describe('Button', () => {
     expect(buttonElement).toBeInTheDocument();
   });
 
-  test('should apply primary class when primary prop is true', () => {
-    render(<Button {...defaultProps} primary />);
+  test('should apply correct size class for small', () => {
+    render(<Button {...defaultProps} size="small" />);
 
     const buttonElement = screen.getByText(/click me/i);
-    expect(buttonElement).toHaveClass('storybook-button--primary');
+    expect(buttonElement).toHaveClass('button--small');
   });
 
-  test('should apply secondary class when primary prop is false', () => {
-    render(<Button {...defaultProps} />);
+  test('should apply correct size class for medium', () => {
+    render(<Button {...defaultProps} size="medium" />);
 
     const buttonElement = screen.getByText(/click me/i);
-    expect(buttonElement).toHaveClass('storybook-button--secondary');
+    expect(buttonElement).toHaveClass('button--medium');
   });
 
-  test('should apply correct size class', () => {
+  test('should apply correct size class for large', () => {
     render(<Button {...defaultProps} size="large" />);
 
     const buttonElement = screen.getByText(/click me/i);
-    expect(buttonElement).toHaveClass('storybook-button--large');
+    expect(buttonElement).toHaveClass('button--large');
   });
 
   test('should call onClick handler when clicked', () => {

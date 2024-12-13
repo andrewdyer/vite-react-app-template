@@ -4,11 +4,12 @@ A template for building frontend applications using Vite and React with TypeScri
 
 This template is built using the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) and includes the following extended setup:
 
-- [Prettier](https://prettier.io/) for code formatting.
 - [Vitest](https://vitest.dev/) for unit testing, along with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing React components, Vitest UI, and coverage reports.
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
 - [React Router](https://reactrouter.com/) for routing with `react-router-dom`.
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
+- [Prettier](https://prettier.io/) for code formatting.
+- [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting and testing before commits.
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing and building.
 
 ## Project Structure

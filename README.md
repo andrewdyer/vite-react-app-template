@@ -10,6 +10,46 @@ This template is built using the official Vite template for React with TypeScrip
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
 - [React Router](https://reactrouter.com/) for routing with `react-router-dom`.
 
+## Project Structure
+
+This project emphasizes clarity, modularity, and separation of concerns.
+
+The entry point of the application is `src/main.tsx`, where initialization and execution begin.
+
+The `src/app/` directory contains core configuration, including the root component, routing, and global providers. This directory sets up the application’s overall structure.
+
+Feature-specific code resides in `src/modules/`. Each module has its own components, layouts, pages, hooks, and related resources. This modular approach makes the project easier to expand and maintain.
+
+Shared resources, such as utilities and components, are located in `src/shared/`, promoting consistency and adhering to the DRY (Don’t Repeat Yourself) principle.
+
+```text
+my-project/
+├── src/
+│   ├── app/
+│   │   └── core/
+│   ├── modules/
+│   │   └── demo/
+│   │       ├── assets/
+│   │       ├── components/
+│   │       └── pages/
+│   ├── shared/
+│   │   └── components/
+│   ├── main.ts
+│   ├── setupTests.ts
+│   └── vite-env.d.ts
+├── package.json
+├── index.html
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── vitest.config.ts
+```
+
+To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`, allowing key directories within the `src/` folder to be referenced without complex relative paths.
+
+The `@` alias points to `src/app/` for core application logic, `@shared` is used to access `src/shared/`, while subdirectories in `src/modules/` use the pattern `@module-name` (e.g., @demo). These aliases ensure consistent and scalable imports, making it easier to reference modules throughout the codebase.
+
 ## Available Scripts
 
 ### `yarn dev`

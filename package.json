@@ -4,18 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
     "build": "tsc -b && vite build",
     "build:storybook": "storybook build",
+    "lint": "eslint .",
+    "prepare": "husky",
+    "prettier": "prettier --ignore-unknown --write .",
+    "preview": "vite preview",
+    "start": "vite",
     "start:storybook": "storybook dev -p 6006",
     "test": "vitest --run",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
-    "test:watch": "vitest",
-    "lint": "eslint .",
-    "prettier": "prettier --ignore-unknown --write .",
-    "preview": "vite preview",
-    "prepare": "husky"
+    "test:watch": "vitest"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"

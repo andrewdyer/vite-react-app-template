@@ -1,14 +1,12 @@
-import { BrowserRouter } from 'react-router-dom';
-
-import { Router } from '@/core';
+import { Providers, Router } from '@/core';
 
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Providers>
       <Router />
-    </BrowserRouter>
+    </Providers>
   );
 }
 

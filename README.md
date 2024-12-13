@@ -9,6 +9,7 @@ This template is built using the official Vite template for React with TypeScrip
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
 - [React Router](https://reactrouter.com/) for routing with `react-router-dom`.
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
+- CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing and building.
 
 ## Project Structure
 

@@ -1,27 +1,16 @@
 import './button.css';
 
 export interface ButtonProps {
-  primary?: boolean;
   size?: 'small' | 'medium' | 'large';
   label: string;
   onClick?: () => void;
 }
 
-const Button = ({
-  primary = false,
-  size = 'medium',
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary
-    ? 'storybook-button--primary'
-    : 'storybook-button--secondary';
+const Button = ({ size = 'medium', label, ...props }: ButtonProps) => {
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(
-        ' '
-      )}
+      className={['button', `button--${size}`].join(' ')}
       {...props}
     >
       {label}

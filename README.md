@@ -12,6 +12,7 @@ This template is built using the official Vite template for React with TypeScrip
 - [Prettier](https://prettier.io/) for code formatting.
 - [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting, formatting, and testing before commits.
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing and building.
+- Docker support for containerizing the application.
 
 ## Project Structure
 

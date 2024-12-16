@@ -62,46 +62,16 @@ The `@` alias points to `src/app/` for core application logic, `@shared` is used
 
 ## Available Scripts
 
-### `yarn start`
-
-Starts the development server using Vite.
-
-### `yarn build`
-
-Builds the project using TypeScript and Vite.
-
-### `yarn build:storybook`
-
-Builds the Storybook instance.
-
-### `yarn start:storybook`
-
-Starts the Storybook server on port 6006.
-
-### `yarn test`
-
-Runs the tests using Vitest.
-
-### `yarn test:watch`
-
-Runs the tests in watch mode using Vitest.
-
-### `yarn test:coverage`
-
-Runs the tests and generates a coverage report using Vitest.
-
-### `yarn test:ui`
-
-Runs the tests with the Vitest UI.
-
-### `yarn lint`
-
-Lints the project using ESLint.
-
-### `yarn prettier`
-
-Formats the code using Prettier.
-
-### `yarn preview`
-
-Previews the built project using Vite.
+| Script                 | Description                                                  |
+| ---------------------- | ------------------------------------------------------------ |
+| `yarn start`           | Starts the development server using Vite.                    |
+| `yarn build`           | Builds the project using TypeScript and Vite.                |
+| `yarn build:storybook` | Builds the Storybook instance.                               |
+| `yarn start:storybook` | Starts the Storybook server on port 6006.                    |
+| `yarn test`            | Runs the tests using Vitest.                                 |
+| `yarn test:watch`      | Runs the tests in watch mode using Vitest.                   |
+| `yarn test:coverage`   | Runs the tests and generates a coverage report using Vitest. |
+| `yarn test:ui`         | Runs the tests with the Vitest UI.                           |
+| `yarn lint`            | Lints the project using ESLint.                              |
+| `yarn prettier`        | Formats the code using Prettier.                             |
+| `yarn preview`         | Previews the built project using Vite.                       |

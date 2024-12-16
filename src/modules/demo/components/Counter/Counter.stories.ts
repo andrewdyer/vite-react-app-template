@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 
 import Counter from './Counter';
 
@@ -10,15 +9,10 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  args: { onIncrement: fn(), onDecrement: fn() },
 } satisfies Meta<typeof Counter>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-  args: {
-    count: 0,
-  },
-};
+export const Default: Story = {};

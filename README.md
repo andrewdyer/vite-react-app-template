@@ -1,6 +1,6 @@
 # Vite + React App Template
 
-A template for building frontend applications using Vite and React with TypeScript.
+A template for building frontend applications using [Vite](https://vitejs.dev/) and [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/).
 
 This template is built using the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) and includes the following extended setup:
 

@@ -34,6 +34,10 @@ The `modules` directory is designed for feature-specific code. Each feature is o
 
 To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`. By default, the `@` alias points to `app`, and `@module-name` patterns are used for subdirectories in `modules` (e.g., @demo). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
+### When to use
+
+If you like what you’ve seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button on GitHub.
+
 ## Available Scripts
 
 | Script                 | Description                                                  |

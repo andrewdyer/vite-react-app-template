@@ -53,3 +53,25 @@ If you like what you’ve seen so far and think this setup fits your needs, you 
 | `yarn lint`            | Lints the project using ESLint.                              |
 | `yarn prettier`        | Formats the code using Prettier.                             |
 | `yarn preview`         | Previews the built project using Vite.                       |
+
+## Dockerizing
+
+### Building the Docker Image
+
+To build a Docker image for the application, run the following command:
+
+```sh
+docker build -t vite-react-app-template .
+```
+
+This command creates a Docker image named `vite-react-app-template` using the Dockerfile in the current directory.
+
+### Running the Docker Container
+
+To run a container from the previously built Docker image, use the following command:
+
+```sh
+docker run --name vite-react-app --publish 8080:80 --detach vite-react-app-template
+```
+
+This command runs a container named `my-app` from the `vite-react-app-template` image in detached mode.

@@ -8,7 +8,7 @@ Licensed under the [MIT license](https://opensource.org/licenses/MIT). Totally f
 
 ## Introduction
 
-This template enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools, configurations, and a project architecture focused on clarity, modularity, and maintainability. It serves the purpose of providing a solid foundation to help you hit the ground running and saves you valuable time when starting a new project.
+This template enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools and configurations, whilst implementing an architecture that focuses on clarity, modularity, and maintainability. It serves the purpose of providing a solid foundation to help you hit the ground running and save valuable time when starting a new project.
 
 ### Project Features Overview
 

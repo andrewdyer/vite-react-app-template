@@ -2,6 +2,10 @@
 
 A template for building frontend applications using [Vite](https://vitejs.dev/) and [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/).
 
+## License
+
+Licensed under the [MIT license](https://opensource.org/licenses/MIT). Totally free for private or commercial projects.
+
 This template is built using the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) and includes the following extended setup:
 
 - [Vitest](https://vitest.dev/) for unit testing, along with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing React components, Vitest UI, and coverage reports.

@@ -8,7 +8,11 @@ Licensed under the [MIT license](https://opensource.org/licenses/MIT). Totally f
 
 ## Introduction
 
-This template provides a robust starting point for building frontend applications. It enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools and configurations. These include:
+This template enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools, configurations, and a project architecture focused on clarity, modularity, and maintainability.
+
+### Project Features Overview
+
+This template includes the following additional tools and configurations:
 
 - [Vitest](https://vitest.dev/) for unit testing, along with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing React components, Vitest UI, and coverage reports.
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
@@ -20,45 +24,15 @@ This template provides a robust starting point for building frontend application
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing and building.
 - Docker support for containerizing the application.
 
-## Project Structure
+### Project Architecture Overview
 
-This project emphasizes clarity, modularity, and separation of concerns.
+The primary source code is located in the src folder, organized into two key directories: `app` and `modules`.
 
-The entry point of the application is `src/main.tsx`, where initialization and execution begin.
+The `app` directory contains core application code, including the main App component, routing, global providers, utilities, and custom hooks. This directory sets up the application’s overall structure.
 
-The `src/app/` directory contains core configuration, including the root component, routing, and global providers. This directory sets up the application’s overall structure.
+The `modules` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., demo/), containing related components, layouts, pages, hooks, and other resources. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
-Feature-specific code resides in `src/modules/`. Each module has its own components, layouts, pages, hooks, and related resources. This modular approach makes the project easier to expand and maintain.
-
-Shared resources, such as utilities and components, are located in `src/shared/`, promoting consistency and adhering to the DRY (Don’t Repeat Yourself) principle.
-
-```text
-my-project/
-├── src/
-│   ├── app/
-│   │   └── core/
-│   ├── modules/
-│   │   └── demo/
-│   │       ├── assets/
-│   │       ├── components/
-│   │       └── pages/
-│   ├── shared/
-│   │   └── components/
-│   ├── main.ts
-│   ├── setupTests.ts
-│   └── vite-env.d.ts
-├── package.json
-├── index.html
-├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
-├── vite.config.ts
-└── vitest.config.ts
-```
-
-To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`, allowing key directories within the `src/` folder to be referenced without complex relative paths.
-
-The `@` alias points to `src/app/` for core application logic, `@shared` is used to access `src/shared/`, while subdirectories in `src/modules/` use the pattern `@module-name` (e.g., @demo). These aliases ensure consistent and scalable imports, making it easier to reference modules throughout the codebase.
+To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`. By default, the `@` alias points to `app`, and `@module-name` patterns are used for subdirectories in `modules` (e.g., @demo). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
 ## Available Scripts
 

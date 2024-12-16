@@ -18,6 +18,7 @@ This template includes the following additional tools and configurations:
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
 - [MSW](https://mswjs.io/) (Mock Service Worker) for API mocking during development and testing.
 - [React Router](https://reactrouter.com/) for routing with `react-router-dom`.
+- [Redux](https://redux.js.org/) for state management with `@reduxjs/toolkit` and `react-redux`.
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
 - [Prettier](https://prettier.io/) for code formatting.
 - [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting, formatting, and testing before commits.

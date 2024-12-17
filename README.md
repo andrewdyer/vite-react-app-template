@@ -98,3 +98,7 @@ docker run --name vite-react-app --publish 8080:80 --detach vite-react-app-templ
 ```
 
 This command runs a container named `vite-react-app` from the `vite-react-app-template` image in detached mode.
+
+## Learn More
+
+Before contributing to this project, please refer to the [contributing](./CONTRIBUTING.md) documentation.

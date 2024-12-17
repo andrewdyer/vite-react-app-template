@@ -1,5 +1,5 @@
-import { Router } from '@/core';
 import { Providers } from '@/providers';
+import { Router } from '@/router';
 
 import './App.css';
 

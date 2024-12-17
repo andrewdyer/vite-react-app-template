@@ -52,9 +52,20 @@ Use clear, descriptive commit messages following the [Conventional Commits](http
 
 ## Testing
 
-Please write tests for any new features or modifications to the project. Run tests using `yarn test` and check coverage using `yarn test:coverage` to ensure all tests pass and that adequate test coverage is maintained before submitting changes. You can also use the Vitest UI with `yarn test:ui` for an interactive testing experience.
+Please write tests for any new features or modifications to the project. Follow these steps to ensure your tests are effective and consistent:
 
-For consistency and modularity, organize test code into structured sections. Start with mocks of dependencies or libraries, followed by helper functions that streamline repetitive logic, such as rendering components or managing state. Next, define constants for any mock data or configuration used across tests. Finally, structure the main test suite using descriptive describe blocks and focused test cases to capture specific behaviors and outcomes. This approach ensures your tests are clear, reusable, and easy to maintain.
+- Use `yarn test` to run the tests.
+- Check coverage using `yarn test:coverage` to ensure all tests pass.
+- For an interactive testing experience, use Vitest UI with `yarn test:ui`.
+
+For consistency and modularity, organize test code into structured sections:
+
+- Start by mocking dependencies or libraries.
+- Create helper functions to streamline repetitive logic.
+- Define constants for mock data or configurations.
+- Structure the main test suite using `describe` blocks and focused test cases.
+
+Ensure tests are clear, reusable, and easy to maintain before submitting changes.
 
 ## Submitting Changes
 

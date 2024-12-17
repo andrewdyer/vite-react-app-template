@@ -6,11 +6,12 @@ Thank you for your interest in contributing! We welcome improvements and suggest
 
 1. [Code of Conduct](#code-of-conduct)
 2. [Development Setup](#development-setup)
-3. [Coding Standards](#coding-standards)
-4. [Commit Guidelines](#commit-guidelines)
-5. [Testing](#testing)
-6. [Submitting Changes](#submitting-changes)
-7. [Creating a Module](#creating-a-module)
+3. [Upgrading Dependencies](#upgrading-dependencies)
+4. [Coding Standards](#coding-standards)
+5. [Commit Guidelines](#commit-guidelines)
+6. [Testing](#testing)
+7. [Submitting Changes](#submitting-changes)
+8. [Creating a Module](#creating-a-module)
 
 ## Code of Conduct
 
@@ -23,6 +24,17 @@ Please adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md) in all interactions
 3. Start the development server using `yarn start` to begin working on the project.
 4. Start Storybook using `yarn start:storybook` to develop and test UI components in isolation.
 5. Run tests with `yarn test` to verify that the environment is working correctly.
+
+## Upgrading Dependencies
+
+Keeping dependencies up-to-date is crucial for maintaining the security and performance of the project. Follow these steps to upgrade dependencies:
+
+1. Check for outdated dependencies with `yarn outdated`.
+2. Update dependencies using all with `yarn upgrade` or update a specific package with `yarn add <package-name>@latest`.
+3. Ensure everything works after the upgrade by running the tests with `yarn test`.
+4. Make sure the `yarn.lock` file is updated with the latest dependency versions by running `yarn install`.
+5. Commit the changes to the repository with a clear commit message.
+6. Push the changes to your branch and create a pull request for review.
 
 ## Coding Standards
 

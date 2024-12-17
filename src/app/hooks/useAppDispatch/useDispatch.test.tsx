@@ -1,8 +1,8 @@
 import { renderHook } from '@testing-library/react';
-
 import { Provider } from 'react-redux';
 
-import store from '@/store';
+import { store } from '@/store';
+
 import useAppDispatch from './useAppDispatch';
 
 describe('useAppDispatch', () => {

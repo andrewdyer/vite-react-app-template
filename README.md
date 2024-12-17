@@ -26,7 +26,7 @@ This template includes the following additional tools and configurations:
 
 ### Project Architecture Overview
 
-The primary source code is located in the src folder, organized into two key directories: `app` and `modules`.
+The primary source code is located in the `src/` folder, organized into two key directories: `app/` and `modules/`.
 
 Here’s a breakdown of the directory structure:
 
@@ -51,11 +51,11 @@ src/
 └── setupTests.ts            # Test setup file
 ```
 
-The `app` directory contains core application code, including the main `App` component, components, hooks, providers, routing, and store configuration. Together, these elements set up the application's overall structure. The `main.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
+The `app/` directory contains core application code, including the main `App` component, components, hooks, providers, routing, and store configuration. Together, these elements set up the application's overall structure. The `main.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
-The `modules` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., demo/), containing related components, layouts, pages, hooks, and other resources. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
+The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related components, layouts, pages, hooks, and other resources. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
-To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`. By default, the `@` alias points to `app`, and `@module-name` patterns are used for subdirectories in `modules` (e.g., @demo). These aliases help keep imports clean, consistent, and scalable as the project grows.
+To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., @demo). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
 ### When to use
 

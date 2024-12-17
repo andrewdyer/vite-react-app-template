@@ -3,13 +3,13 @@ import { Provider } from 'react-redux';
 
 import store from '@/store';
 
-import HomePage from './HomePage';
+import Home from './Home';
 
-describe('HomePage', () => {
-  test('should render the HomePage component without error', () => {
+describe('Home', () => {
+  test('should render the Home component without error', () => {
     render(
       <Provider store={store}>
-        <HomePage />
+        <Home />
       </Provider>
     );
 

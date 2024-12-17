@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { expect, userEvent, within } from '@storybook/test';
 
-import HomePage from './HomePage';
+import Home from './Home';
 
 const meta = {
-  title: 'Demo/Pages/HomePage',
-  component: HomePage,
+  title: 'Demo/Pages/Home',
+  component: Home,
   parameters: {
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof HomePage>;
+} satisfies Meta<typeof Home>;
 
 export default meta;
 

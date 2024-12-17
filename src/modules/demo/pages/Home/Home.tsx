@@ -3,9 +3,9 @@ import viteLogo from '/vite.svg';
 import reactLogo from '@demo/assets/react.svg';
 import { Counter } from '@demo/components';
 
-import './HomePage.css';
+import './Home.css';
 
-const HomePage = () => {
+const Home = () => {
   return (
     <>
       <div>
@@ -25,4 +25,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

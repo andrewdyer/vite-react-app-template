@@ -1,6 +1,5 @@
+import { Button } from '@/components';
 import { useAppDispatch, useAppSelector } from '@/hooks';
-
-import { Button } from '@shared/components';
 
 import { counterActions, selectCount } from '@demo/slices';
 

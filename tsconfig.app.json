@@ -27,8 +27,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/app/*"],
-      "@demo/*": ["src/modules/demo/*"],
-      "@shared/*": ["src/shared/*"]
+      "@demo/*": ["src/modules/demo/*"]
     }
   },
   "include": ["src"]

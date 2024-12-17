@@ -1,16 +1,20 @@
-import { useState } from 'react';
+import { useAppDispatch, useAppSelector } from '@/hooks';
 
 import { Button } from '@shared/components';
+
+import { increment, selectCount } from '@demo/state';
 
 import './Counter.css';
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const count = useAppSelector(selectCount);
+
+  const dispatch = useAppDispatch();
 
   return (
     <div className="card">
       <Button
-        onClick={() => setCount((count) => count + 1)}
+        onClick={() => dispatch(increment())}
         label={`count is ${count}`}
       />
       <p>

@@ -2,7 +2,7 @@ import { useAppDispatch, useAppSelector } from '@/hooks';
 
 import { Button } from '@shared/components';
 
-import { increment, selectCount } from '@demo/state';
+import { increment, selectCount } from '@demo/slices';
 
 import './Counter.css';
 

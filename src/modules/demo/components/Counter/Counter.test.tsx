@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
-import { counterReducer } from '@demo/state';
+import { counterReducer } from '@demo/slices';
 
 import Counter from './Counter';
 

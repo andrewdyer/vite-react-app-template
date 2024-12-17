@@ -1,4 +1,7 @@
 import type { Preview } from '@storybook/react';
+import withRedux from './decorators/withRedux';
+
+export const decorators = [withRedux];
 
 const preview: Preview = {
   parameters: {

@@ -2,7 +2,7 @@ import { useAppDispatch, useAppSelector } from '@/hooks';
 
 import { Button } from '@shared/components';
 
-import { increment, selectCount } from '@demo/slices';
+import { counterActions, selectCount } from '@demo/slices';
 
 import './Counter.css';
 
@@ -14,7 +14,7 @@ const Counter = () => {
   return (
     <div className="card">
       <Button
-        onClick={() => dispatch(increment())}
+        onClick={() => dispatch(counterActions.increment())}
         label={`count is ${count}`}
       />
       <p>

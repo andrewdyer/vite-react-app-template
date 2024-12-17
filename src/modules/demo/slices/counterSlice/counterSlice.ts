@@ -1,5 +1,6 @@
-import type { RootState } from '@/store';
 import { createSlice } from '@reduxjs/toolkit';
+
+import type { RootState } from '@/store';
 
 export interface CounterState {
   value: number;
@@ -19,7 +20,7 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { increment } = counterSlice.actions;
+export const counterActions = counterSlice.actions;
 
 export const counterReducer = counterSlice.reducer;
 

@@ -84,20 +84,20 @@ If you like what you’ve seen so far and think this setup fits your needs, you 
 To build a Docker image for the application, run the following command:
 
 ```sh
-docker build -t vite-react-app-template .
+docker build -t vite-react-app .
 ```
 
-This command creates a Docker image named `vite-react-app-template` using the Dockerfile in the current directory.
+This command creates a Docker image named `vite-react-app` using the Dockerfile in the current directory.
 
 ### Running the Docker Container
 
 To run a container from the previously built Docker image, use the following command:
 
 ```sh
-docker run --name vite-react-app --publish 8080:80 --detach vite-react-app-template
+docker run --name my-app --publish 8080:80 --detach vite-react-app
 ```
 
-This command runs a container named `vite-react-app` from the `vite-react-app-template` image in detached mode.
+This command runs a container named `my-app` from the `vite-react-app` image in detached mode.
 
 ## Learn More
 

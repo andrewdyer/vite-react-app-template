@@ -32,7 +32,7 @@ To get started with contributing, set up the project by following these steps:
 Keeping dependencies up-to-date is crucial for maintaining the security and performance of the project. Follow these steps to upgrade dependencies:
 
 1. Check for outdated dependencies with `yarn outdated`.
-2. Update dependencies using all with `yarn upgrade` or update a specific package with `yarn add <package-name>@latest`.
+2. Update dependencies using `yarn upgrade` or update a specific package with `yarn add <package-name>@latest`.
 3. Ensure everything works after the upgrade by running the tests with `yarn test`.
 4. Make sure the `yarn.lock` file is updated with the latest dependency versions by running `yarn install`.
 5. Commit the changes to the repository with a clear commit message.
@@ -43,8 +43,8 @@ Keeping dependencies up-to-date is crucial for maintaining the security and perf
 To maintain code quality and consistency, please follow these guidelines:
 
 - Run `yarn prettier` to format code using Prettier and `yarn lint` for linting with ESLint.
-- Organize imports into clearly separated groups, following this order: React imports, third-party packages, app-level aliases, and local imports within the same module or folder.
-- Arrange imports alphabetically by package name to improve readability within each group.
+- Organize imports into clearly separated groups, following this order: React imports, third-party packages, app-level aliases, and local imports.
+- Arrange imports alphabetically by package name within each group to improve readability.
 
 ## Commit Guidelines
 

@@ -28,7 +28,7 @@ This template includes the following additional tools and configurations:
 
 The primary source code is located in the src folder, organized into two key directories: `app` and `modules`.
 
-The `app` directory contains core application code, including the main App component, routing, global providers, utilities, and custom hooks. This directory sets up the application’s overall structure.
+The `app` directory contains core application code, including the main `App` component, routing, global providers, utilities, and custom hooks. The `main.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
 The `modules` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., demo/), containing related components, layouts, pages, hooks, and other resources. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 

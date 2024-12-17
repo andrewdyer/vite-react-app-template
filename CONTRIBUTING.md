@@ -19,6 +19,8 @@ Please adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md) in all interactions
 
 ## Development Setup
 
+To get started with contributing, set up the project by following these steps:
+
 1. Begin by cloning the repository and navigating to its directory.
 2. Install all project dependencies to ensure a complete setup with `yarn install`.
 3. Start the development server using `yarn start` to begin working on the project.
@@ -55,6 +57,8 @@ Please write tests for any new features or modifications to the project. Run tes
 For consistency and modularity, organize test code into structured sections. Start with mocks of dependencies or libraries, followed by helper functions that streamline repetitive logic, such as rendering components or managing state. Next, define constants for any mock data or configuration used across tests. Finally, structure the main test suite using descriptive describe blocks and focused test cases to capture specific behaviors and outcomes. This approach ensures your tests are clear, reusable, and easy to maintain.
 
 ## Submitting Changes
+
+Once you've made your changes, follow these steps to submit them for review:
 
 1. Create a feature branch with `git checkout -b feature/your-feature-name`.
 2. Commit your changes following the commit guidelines.

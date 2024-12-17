@@ -32,22 +32,23 @@ Here’s a breakdown of the directory structure:
 
 ```plaintext
 src/
-├── app/
-│   ├── components/
-│   ├── hooks/
-│   ├── providers/
-│   ├── router/
-│   ├── store/
-│   ├── App.tsx
-│   └── main.tsx
-├── modules/
-│   └── demo/
-│       ├── assets/
-│       ├── components/
-│       ├── pages/
-│       └── slices/
-├── setupTests.ts
-└── vite-env.d.ts
+├── app/                     # Core application code
+│   ├── components/          # Reusable UI components
+│   ├── hooks/               # Custom React hooks
+│   ├── pipes/               # Data transformation utilities
+│   ├── providers/           # Context providers
+│   ├── router/              # Application routing
+│   ├── store/               # Redux store configuration
+│   ├── App.tsx              # Main App component
+│   └── main.tsx             # Entry point of the application
+├── modules/                 # Feature-specific code
+│   └── demo/                # Demo feature module
+│       ├── assets/          # Static assets for the demo module
+│       ├── components/      # Components specific to the demo module
+│       ├── hooks/           # Custom hooks for the demo module
+│       ├── pages/           # Pages specific to the demo module
+│       └── slices/          # Redux slices for the demo module
+└── setupTests.ts            # Test setup file
 ```
 
 The `app` directory contains core application code, including the main `App` component, components, hooks, providers, routing, and store configuration. Together, these elements set up the application's overall structure. The `main.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.

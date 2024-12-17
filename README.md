@@ -40,7 +40,7 @@ src/
 │   ├── router/              # Application routing
 │   ├── store/               # Redux store configuration
 │   ├── App.tsx              # Main App component
-│   └── main.tsx             # Entry point of the application
+│   └── index.tsx            # Entry point of the application
 ├── modules/                 # Feature-specific code
 │   └── demo/                # Demo feature module
 │       ├── assets/          # Static assets for the demo module
@@ -51,7 +51,7 @@ src/
 └── setupTests.ts            # Test setup file
 ```
 
-The `app/` directory contains core application code, including the main `App` component, components, hooks, providers, routing, and store configuration. Together, these elements set up the application's overall structure. The `main.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
+The `app/` directory contains core application code, including the `App` component, components, hooks, providers, routing, and store configuration. Together, these elements set up the application's overall structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
 The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related components and pages. You’re not limited to these — feel free to add folders or any other structure that suits your feature’s needs. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows. [Read more about creating a module here!](./CONTRIBUTING.md#creating-a-module)
 

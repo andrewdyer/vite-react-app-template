@@ -10,6 +10,7 @@ Thank you for your interest in contributing! We welcome improvements and suggest
 4. [Commit Guidelines](#commit-guidelines)
 5. [Testing](#testing)
 6. [Submitting Changes](#submitting-changes)
+7. [Creating a Module](#creating-a-module)
 
 ## Code of Conduct
 
@@ -28,7 +29,8 @@ Please adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md) in all interactions
 To maintain code quality and consistency, please follow these guidelines:
 
 - Run `yarn prettier` to format code using Prettier and `yarn lint` for linting with ESLint.
-- Organize imports into clearly separated groups, following this order: React imports, third-party packages, app-level aliases, and local imports within the same package or folder. Within each group, arrange imports alphabetically by package name to improve readability.
+- Organize imports into clearly separated groups, following this order: React imports, third-party packages, app-level aliases, and local imports within the same module or folder.
+- Arrange imports alphabetically by package name to improve readability within each group.
 
 ## Commit Guidelines
 
@@ -46,3 +48,14 @@ For consistency and modularity, organize test code into structured sections. Sta
 2. Commit your changes following the commit guidelines.
 3. Push your branch with `git push origin feature/your-feature-name`.
 4. Open a pull request with a title and description that clearly explain your changes.
+
+## Creating a Module
+
+To create a new module in this project, follow these steps:
+
+1. Create a new directory for the module inside `src/modules/`.
+2. Add the necessary files and folders based on your feature’s needs, such as components, pages, hooks, and slices.
+3. Update `vite.config.ts` and `tsconfig.app.json` to include the module's alias.
+4. Start building your module, following the project’s coding standards and adding tests as needed.
+
+This approach keeps the project modular and maintainable as it grows.

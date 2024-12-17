@@ -1,4 +1,4 @@
-import counterReducer, { increment } from './counterSlice';
+import { counterReducer, increment } from './counterSlice';
 
 describe('counterSlice', () => {
   test('should handle initial state', () => {

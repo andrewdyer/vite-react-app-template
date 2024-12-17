@@ -1,2 +1,2 @@
 export * from './counterSlice';
-export { default as counterReducer } from './counterSlice';
+export { default as counterSlice } from './counterSlice';

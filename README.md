@@ -4,11 +4,11 @@ A template for building frontend applications using [Vite](https://vitejs.dev/) 
 
 ## License
 
-Licensed under the [MIT license](https://opensource.org/licenses/MIT). Totally free for private or commercial projects.
+Licensed under the [MIT license](https://opensource.org/licenses/MIT) and is free for private or commercial projects.
 
 ## Introduction
 
-This template enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools and configurations, whilst implementing an architecture that focuses on clarity, modularity, and maintainability. It serves the purpose of providing a solid foundation to help you hit the ground running and save valuable time when starting a new project.
+This template enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools and configurations, while implementing an architecture that focuses on clarity, modularity, and maintainability. It serves the purpose of providing a solid foundation to help you hit the ground running and save valuable time when starting a new project.
 
 ### Project Features Overview
 
@@ -53,13 +53,13 @@ src/
 
 The `app/` directory contains core application code, including the main `App` component, components, hooks, providers, routing, and store configuration. Together, these elements set up the application's overall structure. The `main.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
-The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related components, layouts, pages, hooks, and other resources. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
+The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related components and pages. You’re not limited to these — feel free to add folders or any other structure that suits your feature’s needs. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
 To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., @demo). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
 ### When to use
 
-If you like what you’ve seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button on GitHub.
+If you like what you’ve seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button at the top of the repository on GitHub.
 
 ## Available Scripts
 
@@ -97,4 +97,4 @@ To run a container from the previously built Docker image, use the following com
 docker run --name vite-react-app --publish 8080:80 --detach vite-react-app-template
 ```
 
-This command runs a container named `my-app` from the `vite-react-app-template` image in detached mode.
+This command runs a container named `vite-react-app` from the `vite-react-app-template` image in detached mode.

@@ -17,7 +17,7 @@ This template includes the following additional tools and configurations:
 - [Vitest](https://vitest.dev/) for unit testing, along with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing React components, Vitest UI, and coverage reports.
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
 - [React Router](https://reactrouter.com/) for client-side routing.
-- [Redux](https://redux.js.org/) for state management, integrated with Redux Toolkit and React Redux.
+- [Redux](https://redux.js.org/) for state management, integrated with [Redux Toolkit](https://redux-toolkit.js.org/) and [React Redux](https://react-redux.js.org/).
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
 - [Prettier](https://prettier.io/) for code formatting.
 - [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting, formatting, and testing before commits.

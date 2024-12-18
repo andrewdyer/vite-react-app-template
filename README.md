@@ -10,6 +10,14 @@ Licensed under the [MIT license](https://opensource.org/licenses/MIT) and is fre
 
 This template enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools and configurations, while implementing an architecture that focuses on clarity, modularity, and maintainability. It serves the purpose of providing a solid foundation to help you hit the ground running and save valuable time when starting a new project.
 
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- **Node.js v20x**: This project requires Node.js version 20.x (as specified in [.nvmrc](.nvmrc))
+- **Yarn**: Dependency management tool for Node.js
+- **Docker** (optional): For containerizing the application
+
 ### Project Features Overview
 
 This template includes the following additional tools and configurations:

@@ -40,12 +40,14 @@ src/
 │   ├── store/               # Redux store configuration
 │   ├── App.tsx              # Main App component
 │   └── index.tsx            # Entry point of the application
+│
 ├── modules/                 # Feature-specific code
 │   └── demo/                # Demo feature module
 │       ├── assets/          # Static assets for the demo module
 │       ├── components/      # Components specific to the demo module
 │       ├── pages/           # Pages specific to the demo module
 │       └── slices/          # Redux slices for the demo module
+│
 └── setupTests.ts            # Test setup file
 ```
 

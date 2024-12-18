@@ -14,7 +14,7 @@ This template enhances the official Vite template for React with TypeScript and 
 
 Before you begin, ensure you have met the following requirements:
 
-- **Node.js v20x**: This project requires Node.js version 20.x (as specified in [.nvmrc](.nvmrc))
+- **Node.js**: This project requires Node.js version 20.x (as specified in [.nvmrc](.nvmrc))
 - **Yarn**: Dependency management tool for Node.js
 - **Docker** (optional): For containerizing the application
 

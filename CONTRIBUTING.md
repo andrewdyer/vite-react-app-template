@@ -22,10 +22,13 @@ Please adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md) in all interactions
 To get started with contributing, set up the project by following these steps:
 
 1. Begin by cloning the repository and navigating to its directory.
-2. Install all project dependencies to ensure a complete setup with `yarn install`.
-3. Start the development server using `yarn start` to begin working on the project.
-4. Start Storybook using `yarn start:storybook` to develop and test UI components in isolation.
-5. Run tests with `yarn test` to verify that the environment is working correctly.
+2. Use the correct Node.js version specified in [.nvmrc](.nvmrc):
+   - Install `nvm` if you haven't already. Follow the instructions on the [nvm GitHub repository](https://github.com/nvm-sh/nvm).
+   - Run `nvm use` to switch to the required Node.js version.
+3. Install all project dependencies to ensure a complete setup with `yarn install`.
+4. Start the development server using `yarn start` to begin working on the project.
+5. Start Storybook using `yarn start:storybook` to develop and test UI components in isolation.
+6. Run tests with `yarn test` to verify that the environment is working correctly.
 
 ## Upgrading Dependencies
 

@@ -1,3 +1,5 @@
+![Vite + React App Template](https://raw.githubusercontent.com/andrewdyer/andrewdyer/refs/heads/main/assets/headers/vite-react-app-template.png)
+
 # Vite + React App Template
 
 A template for building frontend applications using [Vite](https://vitejs.dev/) and [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/).
@@ -84,28 +86,6 @@ If you like what you’ve seen so far and think this setup fits your needs, you 
 | `yarn lint`            | Lints the project using ESLint.                              |
 | `yarn prettier`        | Formats the code using Prettier.                             |
 | `yarn preview`         | Previews the built project using Vite.                       |
-
-## Dockerizing
-
-### Building the Docker Image
-
-To build a Docker image for the application, run the following command:
-
-```sh
-docker build -t vite-react-app .
-```
-
-This command creates a Docker image named `vite-react-app` using the Dockerfile in the current directory.
-
-### Running the Docker Container
-
-To run a container from the previously built Docker image, use the following command:
-
-```sh
-docker run --name my-app --publish 8080:80 --detach vite-react-app
-```
-
-This command runs a container named `my-app` from the `vite-react-app` image in detached mode.
 
 ## Learn More
 

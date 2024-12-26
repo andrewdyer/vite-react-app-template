@@ -11,7 +11,6 @@ Thank you for your interest in contributing! We welcome improvements and suggest
 5. [Commit Guidelines](#commit-guidelines)
 6. [Testing](#testing)
 7. [Submitting Changes](#submitting-changes)
-8. [Creating a Module](#creating-a-module)
 
 ## Code of Conduct
 
@@ -78,14 +77,3 @@ Once you've made your changes, follow these steps to submit them for review:
 2. Commit your changes following the commit guidelines.
 3. Push your branch with `git push origin feature/your-feature-name`.
 4. Open a pull request with a title and description that clearly explain your changes.
-
-## Creating a Module
-
-To create a new module in this project, follow these steps:
-
-1. Create a new directory for the module inside `src/modules/`.
-2. Add the necessary files and folders based on your feature’s needs, such as components, pages, hooks, and slices.
-3. Update `vite.config.ts` and `tsconfig.app.json` to include the module's alias.
-4. Start building your module, following the project’s coding standards and adding tests as needed.
-
-This approach keeps the project modular and maintainable as it grows.

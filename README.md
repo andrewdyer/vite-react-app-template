@@ -67,26 +67,8 @@ The `modules/` directory is designed for feature-specific code. Each feature is 
 
 To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., @demo). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
-### When to use
+### Getting Started
 
 If you like what you’ve seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button at the top of the repository on GitHub.
-
-## Available Scripts
-
-| Script                 | Description                                                  |
-| ---------------------- | ------------------------------------------------------------ |
-| `yarn start`           | Starts the development server using Vite.                    |
-| `yarn build`           | Builds the project using TypeScript and Vite.                |
-| `yarn build:storybook` | Builds the Storybook instance.                               |
-| `yarn start:storybook` | Starts the Storybook server on port 6006.                    |
-| `yarn test`            | Runs the tests using Vitest.                                 |
-| `yarn test:watch`      | Runs the tests in watch mode using Vitest.                   |
-| `yarn test:coverage`   | Runs the tests and generates a coverage report using Vitest. |
-| `yarn test:ui`         | Runs the tests with the Vitest UI.                           |
-| `yarn lint`            | Lints the project using ESLint.                              |
-| `yarn prettier`        | Formats the code using Prettier.                             |
-| `yarn preview`         | Previews the built project using Vite.                       |
-
-## Learn More
 
 Before contributing to this project, please refer to the [contributing](./CONTRIBUTING.md) documentation.

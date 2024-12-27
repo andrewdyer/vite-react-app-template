@@ -27,7 +27,7 @@ To get started with contributing, set up the project by following these steps:
 3. Install all project dependencies to ensure a complete setup with `yarn install`.
 4. Start the development server using `yarn start` to begin working on the project.
 5. Start Storybook using `yarn start:storybook` to develop and test UI components in isolation.
-6. Run tests with `yarn test` to verify that the environment is working correctly.
+6. Run tests with `yarn test` to verify that the environment is working correctly. You can also use `yarn test:watch` to run the tests in watch mode, `yarn test:coverage` to generate a coverage report, and `yarn test:ui` to run the tests with the Vitest UI.
 
 ## Upgrading Dependencies
 
@@ -68,6 +68,14 @@ For consistency and modularity, organize test code into structured sections:
 - Structure the main test suite using `describe` blocks and focused test cases.
 
 Ensure tests are clear, reusable, and easy to maintain before submitting changes.
+
+## Building
+
+Use the following commands as needed to build and preview the project:
+
+- Build the project for production using TypeScript and Vite with `yarn build`.
+- Generate a static Storybook build with `yarn build:storybook`.
+- Preview the production build locally using Vite with `yarn preview`.
 
 ## Submitting Changes
 

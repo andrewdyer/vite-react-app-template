@@ -10,7 +10,8 @@ Thank you for your interest in contributing! We welcome improvements and suggest
 4. [Coding Standards](#coding-standards)
 5. [Commit Guidelines](#commit-guidelines)
 6. [Testing](#testing)
-7. [Submitting Changes](#submitting-changes)
+7. [Building](#building)
+8. [Submitting Changes](#submitting-changes)
 
 ## Code of Conduct
 

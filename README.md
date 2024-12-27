@@ -65,7 +65,7 @@ The `app/` directory contains core application code, including the `App` compone
 
 The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related assets, components, pages, and slices. You’re not limited to these — feel free to add folders or any other structure that suits your feature’s needs. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
-To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
+To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
 ## Getting Started
 

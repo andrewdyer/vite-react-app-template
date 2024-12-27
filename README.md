@@ -20,7 +20,7 @@ Before you begin, ensure you have met the following requirements:
 - **Yarn**: Dependency management tool for Node.js
 - **Docker** (optional): For containerizing the application
 
-## Project Features Overview
+## Features
 
 This template includes the following additional tools and configurations:
 
@@ -34,7 +34,7 @@ This template includes the following additional tools and configurations:
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing, building, and type-checking.
 - [Docker](https://www.docker.com/) support for containerizing the application.
 
-## Project Architecture Overview
+## Architecture
 
 The primary source code is located in the `src/` folder, organized into two key directories: `app/` and `modules/`.
 

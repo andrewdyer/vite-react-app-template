@@ -38,7 +38,7 @@ This template includes the following additional tools and configurations:
 
 The primary source code is located in the `src/` folder, organized into two key directories: `app/` and `modules/`.
 
-Here’s a breakdown of the directory structure:
+Here's a breakdown of the directory structure:
 
 ```plaintext
 src/
@@ -63,12 +63,12 @@ src/
 
 The `app/` directory contains core application code, including the main `App` component, reusable components, hooks, providers, routing, and store configuration. Together, these elements set up the application's overall structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
-The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related assets, components, pages, and slices. You’re not limited to these — feel free to add folders or any other structure that suits your feature’s needs. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
+The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related assets, components, pages, and slices. You're not limited to these — feel free to add folders or any other structure that suits your feature's needs. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
 To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
 ## Getting Started
 
-If you like what you’ve seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button at the top of the repository on GitHub.
+If you like what you've seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button at the top of the repository on GitHub.
 
 Before contributing to this project, please refer to the [contributing](./CONTRIBUTING.md) documentation.

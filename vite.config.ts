@@ -18,6 +18,7 @@ export default defineConfig({
         description:
           'A template for building frontend applications using Vite and React with TypeScript.',
         theme_color: '#ffffff',
+        display: 'standalone',
         icons: [
           {
             src: '/icon-192x192.png',

@@ -31,6 +31,7 @@ This template includes the following additional tools and configurations:
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
 - [Prettier](https://prettier.io/) for code formatting.
 - [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting, formatting, type-checking, and testing before commits.
+- [i18next](https://www.i18next.com/) for internationalization (i18n) support, integrated with [react-i18next](https://react.i18next.com/).
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing, building, and type-checking.
 - [Docker](https://www.docker.com/) support for containerizing the application.
 

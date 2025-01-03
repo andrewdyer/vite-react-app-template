@@ -2,6 +2,7 @@
   "name": "vite-react-app-template",
   "private": true,
   "version": "0.0.0",
+  "author": "Andrew Dyer <andrew@dyermail.com>",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",

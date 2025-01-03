@@ -46,6 +46,7 @@ src/
 ├── app/                     # Core application code
 │   ├── components/          # Reusable UI components
 │   ├── hooks/               # Custom React hooks
+│   ├── i18n/                # Internationalization (i18n) configuration
 │   ├── providers/           # Context providers
 │   ├── router/              # Application routing
 │   ├── store/               # Redux store configuration

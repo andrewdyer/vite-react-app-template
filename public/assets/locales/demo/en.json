@@ -1,0 +1,8 @@
+{
+  "home": {
+    "title": "Vite + React",
+    "description": "Click on the Vite and React logos to learn more",
+    "viteLogoAlt": "Vite logo",
+    "reactLogoAlt": "React logo"
+  }
+}

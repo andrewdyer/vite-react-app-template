@@ -5,6 +5,12 @@ import store from '@/store';
 
 import Home from './Home';
 
+vi.mock('react-i18next', () => ({
+  useTranslation: () => ({
+    t: (key: string) => key,
+  }),
+}));
+
 describe('Home', () => {
   test('should render the Home component without error', () => {
     render(
@@ -13,8 +19,9 @@ describe('Home', () => {
       </Provider>
     );
 
-    expect(screen.getByAltText('Vite logo')).toBeInTheDocument();
-    expect(screen.getByAltText('React logo')).toBeInTheDocument();
-    expect(screen.getByText('Vite + React')).toBeInTheDocument();
+    expect(screen.getByAltText('home.viteLogoAlt')).toBeInTheDocument();
+    expect(screen.getByAltText('home.reactLogoAlt')).toBeInTheDocument();
+    expect(screen.getByText('home.title')).toBeInTheDocument();
+    expect(screen.getByText('home.description')).toBeInTheDocument();
   });
 });

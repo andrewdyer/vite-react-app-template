@@ -8,7 +8,7 @@ A template for building frontend applications using [Vite](https://vitejs.dev/) 
 
 Licensed under the [MIT license](https://opensource.org/licenses/MIT) and is free for private or commercial projects.
 
-## 📖 Introduction
+## ✨ Introduction
 
 This template enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools and configurations, while implementing an architecture that focuses on clarity, modularity, and maintainability. It serves the purpose of providing a solid foundation to help you hit the ground running and save valuable time when starting a new project.
 

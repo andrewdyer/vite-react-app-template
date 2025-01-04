@@ -75,7 +75,7 @@ Before contributing to this project, please refer to the [contributing](./CONTRI
 
 ## 🔄 Staying Updated
 
-When you create a project from this template, it won’t automatically receive updates from future improvements. However, you can set up an **upstream connection** to keep your project in sync with the base template:
+When you create a project from this template, it won't automatically receive updates from future improvements. However, you can set up an **upstream connection** to keep your project in sync with the base template:
 
 1. **Add Upstream Remote:**
 

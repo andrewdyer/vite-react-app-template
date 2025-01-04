@@ -98,6 +98,7 @@ When you create a project from this template, it won't automatically receive upd
    > ⚠️ Note: If this is the first time you're merging from the upstream repository, you might encounter the error "fatal: refusing to merge unrelated histories". If this happens, use the `--allow-unrelated-histories` flag.
 
 4. **Merge Only the Last Few Commits (Optional):**
+
    If you only want to merge specific commits (e.g., the last few commits) from the upstream repository, you can use `git cherry-pick` instead of a full merge. First, identify the commits you want to merge:
 
    ```bash

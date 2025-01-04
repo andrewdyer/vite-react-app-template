@@ -95,7 +95,7 @@ When you create a project from this template, it won’t automatically receive u
    git merge upstream/main
    ```
 
-   > ⚠️ If you get an unrelated histories error, add the `--allow-unrelated-histories` flag.
+   > ⚠️ Note: If this is the first time you're merging from the upstream repository, you might encounter the error "fatal: refusing to merge unrelated histories". If this happens, use the `--allow-unrelated-histories` flag:
 
 4. **Resolve Any Conflicts (if needed):**
    Follow the usual Git conflict resolution process.

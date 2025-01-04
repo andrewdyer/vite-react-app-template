@@ -72,3 +72,32 @@ To simplify imports and maintain organization, path aliases are configured in bo
 If you like what you've seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button at the top of the repository on GitHub.
 
 Before contributing to this project, please refer to the [contributing](./CONTRIBUTING.md) documentation.
+
+## 🔄 Staying Updated
+
+When you create a project from this template, it won’t automatically receive updates from future improvements. However, you can set up an **upstream connection** to keep your project in sync with the base template:
+
+1. **Add Upstream Remote:**
+
+   ```bash
+   git remote add upstream https://github.com/andrewdyer/vite-react-app-template.git
+   ```
+
+2. **Fetch Updates from the Template Repo:**
+
+   ```bash
+   git fetch upstream
+   ```
+
+3. **Merge Changes into Your Project:**
+
+   ```bash
+   git merge upstream/main
+   ```
+
+   > ⚠️ If you get an error saying “fatal: refusing to merge unrelated histories”, add the --allow-unrelated-histories flag:
+
+4. **Resolve Any Conflicts (if needed):**
+   Follow the usual Git conflict resolution process.
+
+Now your project can stay up-to-date without losing your custom changes!

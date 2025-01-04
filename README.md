@@ -114,6 +114,7 @@ When you create a project from this template, it won't automatically receive upd
    This will apply the changes from only those specific commits to your branch.
 
 5. **Resolve Any Conflicts (if needed):**
+
    Follow the usual Git conflict resolution process.
 
 Now your project can stay up-to-date without losing your custom changes!

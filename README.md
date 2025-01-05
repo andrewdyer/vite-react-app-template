@@ -81,7 +81,7 @@ Once you've created your project, follow these steps to get up and running:
 
 1. **Clone Your Repository**
 
-   First, clone your repository and navigate into the project directory:
+   Clone your repository and navigate into the project directory:
 
    ```bash
    git clone https://github.com/YOUR_USERNAME/YOUR_PROJECT.git
@@ -90,7 +90,7 @@ Once you've created your project, follow these steps to get up and running:
 
 2. **Install Dependencies**
 
-   Next, ensure you have the [required tools](#-prerequisites) installed and then run:
+   Ensure you have the [required tools](#-prerequisites) installed and then run:
 
    ```bash
    yarn install
@@ -98,7 +98,7 @@ Once you've created your project, follow these steps to get up and running:
 
 3. **Start the Development Server**
 
-   Finally, run the following command to start the Vite development server:
+   Start the Vite development server:
 
    ```bash
    yarn start

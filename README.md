@@ -16,9 +16,9 @@ This template enhances the official Vite template for React with TypeScript and 
 
 Before you begin, ensure you have met the following requirements:
 
-- **Node.js**: This project requires Node.js version 20.x (as specified in [.nvmrc](.nvmrc))
-- **Yarn**: Dependency management tool for Node.js
-- **Docker** (optional): For containerizing the application
+- **Node.js**: Version 20.x (as specified in [.nvmrc](.nvmrc)) is required.
+- **Yarn**: Dependency management tool for Node.js.
+- **Docker** (optional): For containerizing the application.
 
 ## 🛠️ Features
 
@@ -29,7 +29,7 @@ This template includes the following additional tools and configurations:
 - [React Router](https://reactrouter.com/) for client-side routing.
 - [Redux](https://redux.js.org/) for state management, integrated with [Redux Toolkit](https://redux-toolkit.js.org/) and [React Redux](https://react-redux.js.org/).
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
-- [Prettier](https://prettier.io/) for code formatting.
+- [Prettier](https://prettier.io/) for consistent code formatting across the codebase.
 - [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting, formatting, type-checking, and testing before commits.
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing, building, and type-checking.
 - [Docker](https://www.docker.com/) support for containerizing the application.
@@ -61,9 +61,9 @@ src/
 └── setupTests.ts            # Test setup file
 ```
 
-The `app/` directory contains core application code, including the main `App` component, reusable components, hooks, providers, routing, and store configuration. Together, these elements set up the application's overall structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
+The `app/` directory contains core application code, including the main `App` component, reusable components, hooks, providers, routing, and store configuration. These elements collectively establish the application's structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
-The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related assets, components, pages, and slices. You're not limited to these — feel free to add folders or any other structure that suits your feature's needs. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
+The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related assets, components, pages, and slices. You're not limited to this structure — feel free to add folders or adjust as needed for your feature. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
 To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
@@ -77,7 +77,7 @@ For a more in-depth setup guide, including details on running tests, Storybook, 
 
 ### 🎬 Quick Start
 
-Once you’ve created your project, follow these steps to get up and running:
+Once you've created your project, follow these steps to get up and running:
 
 1. **Clone Your Repository:**
 
@@ -128,7 +128,7 @@ When you create a project from this template, it won't automatically receive upd
    git merge upstream/main
    ```
 
-   > ⚠️ Note: If this is the first time you're merging from the upstream repository, you might encounter the error "fatal: refusing to merge unrelated histories". If this happens, use the `--allow-unrelated-histories` flag.
+   > 📝 Note: If this is the first time you're merging from the upstream repository, you might encounter the error "fatal: refusing to merge unrelated histories". If this happens, use the `--allow-unrelated-histories` flag.
 
 4. **Merge Only the Last Few Commits (Optional):**
 

@@ -134,11 +134,15 @@ When you create a project from this template, it won't automatically receive upd
 
 1. **Add Upstream Remote:**
 
+   Add the original template repository as an upstream source:
+
    ```bash
    git remote add upstream https://github.com/andrewdyer/vite-react-app-template.git
    ```
 
-2. **Fetch Updates from the Template Repo:**
+2. **Fetch Updates from the Upstream Repository:**
+
+   Retrieve the latest changes from the upstream template:
 
    ```bash
    git fetch upstream
@@ -146,21 +150,23 @@ When you create a project from this template, it won't automatically receive upd
 
 3. **Merge Changes into Your Project:**
 
+   Merge the fetched updates into your local branch:
+
    ```bash
    git merge upstream/main
    ```
 
    > 📝 Note: If this is the first time you're merging from the upstream repository, you might encounter the error "fatal: refusing to merge unrelated histories". If this happens, use the `--allow-unrelated-histories` flag.
 
-4. **Merge Only the Last Few Commits (Optional):**
+4. **Merge Specific Commits (Optional):**
 
-   If you only want to merge specific commits (e.g., the last few commits) from the upstream repository, you can use `git cherry-pick` instead of a full merge. First, identify the commits you want to merge:
+   To merge only specific commits from upstream, first list the commits:
 
    ```bash
    git log upstream/main --oneline
    ```
 
-   Then, cherry-pick the specific commits:
+   Then cherry-pick the desired commits:
 
    ```bash
    git cherry-pick <commit-hash1> <commit-hash2> <commit-hash3>
@@ -170,7 +176,7 @@ When you create a project from this template, it won't automatically receive upd
 
 5. **Resolve Any Conflicts (if needed):**
 
-   Follow the usual Git conflict resolution process.
+   If there are merge conflicts, resolve them manually and complete the merge process.
 
 Now your project can stay up-to-date without losing your custom changes!
 

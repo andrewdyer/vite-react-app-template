@@ -79,7 +79,7 @@ For a more in-depth setup guide, including details on running tests, Storybook, 
 
 Once you've created your project, follow these steps to get up and running:
 
-1. **Clone Your Repository:**
+1. **Clone Your Repository**
 
    First, clone your repository and navigate into the project directory:
 
@@ -88,7 +88,7 @@ Once you've created your project, follow these steps to get up and running:
    cd YOUR_PROJECT
    ```
 
-2. **Install Dependencies:**
+2. **Install Dependencies**
 
    Next, ensure you have the [required tools](#-prerequisites) installed and then run:
 
@@ -96,7 +96,7 @@ Once you've created your project, follow these steps to get up and running:
    yarn install
    ```
 
-3. **Start the Development Server:**
+3. **Start the Development Server**
 
    Finally, run the following command to start the Vite development server:
 
@@ -110,7 +110,7 @@ Your development environment is now ready and your application is running at htt
 
 You can containerize your application with Docker for consistent deployment across environments.
 
-1. **Build the Docker Image:**
+1. **Build the Docker Image**
 
    Build the Docker image using the Dockerfile in the project root:
 
@@ -118,7 +118,7 @@ You can containerize your application with Docker for consistent deployment acro
    docker build -t vite-react-app-template .
    ```
 
-2. **Run the Docker Container:**
+2. **Run the Docker Container**
 
    Start a container from the built image, mapping port `80` in the container to port `8080` on your local machine:
 
@@ -132,7 +132,7 @@ Your application will now be accessible at http://localhost:8080. 🎉
 
 When you create a project from this template, it won't automatically receive updates from future improvements. However, you can set up an **upstream connection** to keep your project in sync with the base template:
 
-1. **Add Upstream Remote:**
+1. **Add Upstream Remote**
 
    Add the original template repository as an upstream source:
 
@@ -140,7 +140,7 @@ When you create a project from this template, it won't automatically receive upd
    git remote add upstream https://github.com/andrewdyer/vite-react-app-template.git
    ```
 
-2. **Fetch Updates from the Upstream Repository:**
+2. **Fetch Updates from the Upstream Repository**
 
    Retrieve the latest changes from the upstream template:
 
@@ -148,7 +148,7 @@ When you create a project from this template, it won't automatically receive upd
    git fetch upstream
    ```
 
-3. **Merge Changes into Your Project:**
+3. **Merge Changes into Your Project**
 
    Merge the fetched updates into your local branch:
 
@@ -158,7 +158,7 @@ When you create a project from this template, it won't automatically receive upd
 
    > 📝 Note: If this is the first time you're merging from the upstream repository, you might encounter the error "fatal: refusing to merge unrelated histories". If this happens, use the `--allow-unrelated-histories` flag.
 
-4. **Merge Specific Commits (Optional):**
+4. **Merge Specific Commits (Optional)**
 
    To merge only specific commits from upstream, first list the commits:
 
@@ -174,7 +174,7 @@ When you create a project from this template, it won't automatically receive upd
 
    This will apply the changes from only those specific commits to your branch.
 
-5. **Resolve Any Conflicts (if needed):**
+5. **Resolve Any Conflicts (if needed)**
 
    If there are merge conflicts, resolve them manually and complete the merge process.
 

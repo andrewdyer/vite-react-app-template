@@ -106,6 +106,28 @@ Once you've created your project, follow these steps to get up and running:
 
 Your development environment is now ready and your application is running at http://localhost:5173 — happy coding! 🎉
 
+## 🐳 Docker Support
+
+You can containerize your application with Docker for consistent deployment across environments.
+
+1. **Build the Docker Image:**
+
+   Build the Docker image using the Dockerfile in the project root:
+
+   ```bash
+   docker build -t vite-react-app-template .
+   ```
+
+2. **Run the Docker Container:**
+
+   Start a container from the built image, mapping port `80` in the container to port `8080` on your local machine:
+
+   ```bash
+   docker run --name vite-react-app -p 8080:80 -d vite-react-app-template
+   ```
+
+Your application will now be accessible at http://localhost:8080. 🎉
+
 ## 🔄 Staying Updated
 
 When you create a project from this template, it won't automatically receive updates from future improvements. However, you can set up an **upstream connection** to keep your project in sync with the base template:

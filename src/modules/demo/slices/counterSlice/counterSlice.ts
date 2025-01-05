@@ -10,7 +10,7 @@ const initialState: CounterState = {
   value: 0,
 };
 
-export const counterSlice = createSlice({
+const counterSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
@@ -20,10 +20,10 @@ export const counterSlice = createSlice({
   },
 });
 
+export default counterSlice;
+
 export const counterActions = counterSlice.actions;
 
 export const counterReducer = counterSlice.reducer;
 
 export const selectCount = (state: RootState) => state.counter.value;
-
-export default counterSlice;

@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import Providers from './Providers';
 
 describe('Providers component', () => {
-  test('renders children correctly', () => {
+  test('should render children correctly', () => {
     render(
       <Providers>
         <div>Test Child</div>

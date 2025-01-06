@@ -8,7 +8,7 @@ vi.mock('@demo/pages', () => ({
 }));
 
 describe('Router', () => {
-  test('renders Home for the root path', () => {
+  test('should render Home for the root path', () => {
     render(
       <MemoryRouter initialEntries={['/']}>
         <Router />

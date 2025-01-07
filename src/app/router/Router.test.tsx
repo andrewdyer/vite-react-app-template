@@ -3,9 +3,13 @@ import { MemoryRouter } from 'react-router-dom';
 
 import Router from './Router';
 
-vi.mock('@demo/pages', () => ({
-  Home: () => <div data-testid="mock-home-page">Home</div>,
-}));
+vi.mock('@demo/pages', () => {
+  const actual = vi.importActual('@demo/pages');
+  return {
+    ...actual,
+    Home: () => <div data-testid="mock-home-page" />,
+  };
+});
 
 describe('Router', () => {
   test('should render Home for the root path', () => {

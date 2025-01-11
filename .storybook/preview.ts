@@ -2,9 +2,9 @@ import type { Preview } from '@storybook/react';
 
 import '../src/app/index.css';
 
-import { withMemoryRouter, withRedux } from './decorators';
+import { withMemoryRouter } from './decorators';
 
-export const decorators = [withMemoryRouter, withRedux];
+export const decorators = [withMemoryRouter];
 
 const preview: Preview = {
   parameters: {

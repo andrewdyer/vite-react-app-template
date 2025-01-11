@@ -27,7 +27,6 @@ This template includes the following additional tools and configurations:
 - [Vitest](https://vitest.dev/) for unit testing, along with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing React components, Vitest UI, and coverage reports.
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
 - [React Router](https://reactrouter.com/) for client-side routing.
-- [Redux](https://redux.js.org/) for state management, integrated with [Redux Toolkit](https://redux-toolkit.js.org/) and [React Redux](https://react-redux.js.org/).
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.
 - [Prettier](https://prettier.io/) for consistent code formatting across the codebase.
 - [Husky](https://typicode.github.io/husky/#/) for Git hooks to automate tasks such as linting, formatting, type-checking, and testing before commits.
@@ -44,10 +43,8 @@ Here's a breakdown of the directory structure:
 src/
 ├── app/                     # Core application code
 │   ├── components/          # Reusable UI components
-│   ├── hooks/               # Custom React hooks
 │   ├── providers/           # Context providers
 │   ├── router/              # Application routing
-│   ├── store/               # Redux store configuration
 │   ├── App.tsx              # Main App component
 │   └── index.tsx            # Entry point of the application
 │
@@ -55,8 +52,7 @@ src/
 │   └── demo/                # Demo feature module
 │       ├── assets/          # Static assets for the demo module
 │       ├── components/      # Components specific to the demo module
-│       ├── pages/           # Pages specific to the demo module
-│       └── slices/          # Redux slices for the demo module
+│       └── pages/           # Pages specific to the demo module
 │
 └── setupTests.ts            # Test setup file
 ```

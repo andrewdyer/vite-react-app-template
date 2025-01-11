@@ -1,19 +1,16 @@
-import { Button } from '@/components';
-import { useAppDispatch, useAppSelector } from '@/hooks';
+import { useState } from 'react';
 
-import { counterActions, selectCount } from '@demo/slices';
+import { Button } from '@/components';
 
 import './Counter.css';
 
 const Counter = () => {
-  const count = useAppSelector(selectCount);
-
-  const dispatch = useAppDispatch();
+  const [count, setCount] = useState(0);
 
   return (
     <div className="card">
       <Button
-        onClick={() => dispatch(counterActions.increment())}
+        onClick={() => setCount((count) => count + 1)}
         label={`count is ${count}`}
       />
       <p>

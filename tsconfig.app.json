@@ -1,13 +1,21 @@
 {
   "compilerOptions": {
+    // Path mapping
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/app/*"],
+      "@demo/*": ["src/modules/demo/*"]
+    },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    // Language and environment
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
 
-    /* Bundler mode */
+    // Module resolution
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
@@ -15,20 +23,15 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Linting */
+    // Linting
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "types": ["vitest/globals", "@testing-library/jest-dom"],
-
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["src/app/*"],
-      "@demo/*": ["src/modules/demo/*"]
-    }
+    // Types
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
   "include": ["src"]
 }

@@ -121,7 +121,7 @@ You can containerize your application with Docker for consistent deployment acro
    docker run --name vite-react-app -p 8080:80 -d vite-react-app-template
    ```
 
-Your application will now be accessible at http://localhost:8080. 🎉
+Your application will now be accessible at http://localhost:8080 — happy coding! 🎉
 
 ## 🤝 Contributing
 

@@ -123,58 +123,6 @@ You can containerize your application with Docker for consistent deployment acro
 
 Your application will now be accessible at http://localhost:8080. 🎉
 
-## 🔄 Staying Updated
-
-When you create a project from this template, it won't automatically receive updates from future improvements. However, you can set up an **upstream connection** to keep your project in sync with the base template:
-
-1. **Add Upstream Remote**
-
-   Add the original template repository as an upstream source:
-
-   ```bash
-   git remote add upstream https://github.com/andrewdyer/vite-react-app-template.git
-   ```
-
-2. **Fetch Updates from the Upstream Repository**
-
-   Retrieve the latest changes from the upstream template:
-
-   ```bash
-   git fetch upstream
-   ```
-
-3. **Merge Changes into Your Project**
-
-   Merge the fetched updates into your local branch:
-
-   ```bash
-   git merge upstream/main
-   ```
-
-   > 📝 Note: If this is the first time you're merging from the upstream repository, you might encounter the error "fatal: refusing to merge unrelated histories". If this happens, use the `--allow-unrelated-histories` flag.
-
-4. **Merge Specific Commits (Optional)**
-
-   To merge only specific commits from upstream, first list the commits:
-
-   ```bash
-   git log upstream/main --oneline
-   ```
-
-   Then cherry-pick the desired commits:
-
-   ```bash
-   git cherry-pick <commit-hash1> <commit-hash2> <commit-hash3>
-   ```
-
-   This will apply the changes from only those specific commits to your branch.
-
-5. **Resolve Any Conflicts (if needed)**
-
-   If there are merge conflicts, resolve them manually and complete the merge process.
-
-Now your project can stay up-to-date without losing your custom changes!
-
 ## 🤝 Contributing
 
 Before contributing to this project, please refer to the [contributing](./CONTRIBUTING.md) documentation.

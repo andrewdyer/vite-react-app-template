@@ -66,10 +66,6 @@ To simplify imports and maintain organization, path aliases are configured in bo
 
 If you like what you've seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button at the top of the repository on GitHub.
 
-For a more in-depth setup guide, including details on running tests, Storybook, and Docker, check out the [development setup](./CONTRIBUTING.md#development-setup) section in the contributing documentation.
-
-> 📝 Note: The contributing documentation applies both to contributing to this template and to setting up your project after using the template.
-
 ### 🎬 Quick Start
 
 Once you've created your project, follow these steps to get up and running:
@@ -100,6 +96,8 @@ Once you've created your project, follow these steps to get up and running:
    ```
 
 Your development environment is now ready and your application is running at http://localhost:5173 — happy coding! 🎉
+
+For a more in-depth setup guide, including details on running tests, Storybook, and Docker, check out the [development setup](./CONTRIBUTING.md#development-setup) section in the contributing documentation.
 
 ## 🐳 Docker Support
 

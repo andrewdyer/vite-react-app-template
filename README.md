@@ -97,7 +97,7 @@ Once you've created your project, follow these steps to get up and running:
 
 Your development environment is now ready and your application is running at http://localhost:5173 — happy coding! 🎉
 
-> 📝 Note: For a more in-depth setup guide, including details on running tests, Storybook, and Docker, check out the [development setup](./CONTRIBUTING.md#development-setup) section in the contributing documentation.
+> 📝 Note: For a more in-depth setup guide, including details on running tests and Storybook, check out the [development setup](./CONTRIBUTING.md#development-setup) section in the contributing documentation.
 
 ## 🐳 Docker Support
 

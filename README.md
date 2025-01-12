@@ -42,7 +42,6 @@ Here's a breakdown of the directory structure:
 ```plaintext
 src/
 ├── app/                     # Core application code
-│   ├── components/          # Reusable UI components
 │   ├── providers/           # Context providers
 │   ├── router/              # Application routing
 │   ├── App.tsx              # Main App component
@@ -57,9 +56,9 @@ src/
 └── setupTests.ts            # Test setup file
 ```
 
-The `app/` directory contains core application code, including the main `App` component, reusable components, hooks, providers, routing, and store configuration. These elements collectively establish the application's structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
+The `app/` directory contains core application code, including the main `App` component, providers and router configuration. These elements collectively establish the application's structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
-The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related assets, components, pages, and slices. You're not limited to this structure — feel free to add folders or adjust as needed for your feature. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
+The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related componentss. You're not limited to any structure — feel free to add folders or adjust as needed for your feature. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
 To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
 

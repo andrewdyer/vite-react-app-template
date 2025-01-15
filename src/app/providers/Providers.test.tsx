@@ -2,14 +2,19 @@ import { render, screen } from '@testing-library/react';
 
 import Providers from './Providers';
 
-describe('Providers component', () => {
-  test('should render children correctly', () => {
-    render(
-      <Providers>
-        <div>Test Child</div>
-      </Providers>
-    );
+const renderComponent = () => {
+  render(
+    <Providers>
+      <div data-testid="mock-component">Test Child</div>
+    </Providers>
+  );
+};
 
-    expect(screen.getByText('Test Child')).toBeInTheDocument();
+describe('Providers', () => {
+  test('should render children correctly', () => {
+    renderComponent();
+
+    const mockComponent = screen.getByTestId('mock-component');
+    expect(mockComponent).toBeInTheDocument();
   });
 });

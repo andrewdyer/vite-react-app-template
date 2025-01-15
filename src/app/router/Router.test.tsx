@@ -4,8 +4,9 @@ import { MemoryRouter } from 'react-router-dom';
 
 import Router from './Router';
 
-vi.mock('@demo/pages', () => {
-  const actual = vi.importActual('@demo/pages');
+vi.mock('@demo/pages', async () => {
+  // prettier-ignore
+  const actual = await vi.importActual<typeof import('@demo/pages')>('@demo/pages');
 
   return {
     ...actual,

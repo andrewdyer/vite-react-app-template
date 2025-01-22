@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MemoryRouter } from 'react-router-dom';
 
-const withMemoryRouter = (Story) => {
+const withMemoryRouter = (Story: React.ComponentType) => {
   return (
     <MemoryRouter>
       <Story />

@@ -11,7 +11,7 @@
     "build:storybook": "storybook build",
     "lint": "eslint .",
     "prepare": "husky",
-    "prettier": "prettier --ignore-unknown --write .",
+    "format": "prettier --ignore-unknown --write .",
     "preview": "vite preview",
     "start": "vite",
     "start:storybook": "storybook dev -p 6006",

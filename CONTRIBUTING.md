@@ -45,7 +45,7 @@ Keeping dependencies up-to-date is crucial for maintaining the security and perf
 
 To maintain code quality and consistency, please follow these guidelines:
 
-- Run `yarn prettier` to format code using Prettier and `yarn lint` for linting with ESLint.
+- Run `yarn format` to format code using Prettier and `yarn lint` for linting with ESLint.
 - Organize imports into clearly separated groups, following this order: React imports, third-party packages, app-level aliases, and local imports.
 - Arrange imports alphabetically by package name within each group to improve readability.
 

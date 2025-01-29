@@ -13,9 +13,6 @@ RUN yarn install
 # Copy the entire application code to the container
 COPY . .
 
-# Set environment variables for production
-ENV VITE_APP_DEBUG=false
-
 # Build the React app for production
 RUN yarn build
 

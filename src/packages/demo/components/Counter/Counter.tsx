@@ -14,7 +14,7 @@ const Counter = () => {
         label={`count is ${count}`}
       />
       <p>
-        Edit <code>src/modules/demo/components/Counter/Counter.tsx</code> and
+        Edit <code>src/packages/demo/components/Counter/Counter.tsx</code> and
         save to test HMR
       </p>
     </div>

@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 export const alias = {
   '@': resolve(__dirname, 'src/app'),
-  '@demo': resolve(__dirname, 'src/modules/demo'),
+  '@demo': resolve(__dirname, 'src/packages/demo'),
 };
 
 export default defineConfig({
@@ -34,7 +34,5 @@ export default defineConfig({
       },
     }),
   ],
-  resolve: {
-    alias,
-  },
+  resolve: { alias },
 });

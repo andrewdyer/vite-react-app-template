@@ -35,7 +35,7 @@ This template includes the following additional tools and configurations:
 
 ## Architecture
 
-The primary source code is located in the `src/` folder, organized into two key directories: `app/` and `modules/`.
+The primary source code is located in the `src/` folder, organized into two key directories: `app/` and `packages/`.
 
 Here's a breakdown of the directory structure:
 
@@ -47,20 +47,20 @@ src/
 │   ├── App.tsx              # Main App component
 │   └── index.tsx            # Entry point of the application
 │
-├── modules/                 # Feature-specific code
-│   └── demo/                # Demo feature module
-│       ├── assets/          # Static assets for the demo module
-│       ├── components/      # Components specific to the demo module
-│       └── pages/           # Pages specific to the demo module
+├── packages/                # Feature-specific code
+│   └── demo/                # Demo package
+│       ├── assets/          # Static assets for the demo package
+│       ├── components/      # Components specific to the demo package
+│       └── pages/           # Pages specific to the demo package
 │
 └── setupTests.ts            # Test setup file
 ```
 
 The `app/` directory contains core application code, including the main `App` component, providers and router configuration. These elements collectively establish the application's structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
-The `modules/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related components. You're not limited to any structure — feel free to add folders or adjust as needed for your feature. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
+The `packages/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related components. You're not limited to any structure — feel free to add folders or adjust as needed for your feature. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
-To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@module-name` patterns are used for subdirectories in `modules/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
+To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@package-name` patterns are used for subdirectories in `packages/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
 ## Getting Started
 

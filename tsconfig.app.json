@@ -2,10 +2,7 @@
   "compilerOptions": {
     // Path mapping
     "baseUrl": "./",
-    "paths": {
-      "@/*": ["src/app/*"],
-      "@demo/*": ["src/modules/demo/*"]
-    },
+    "paths": { "@/*": ["src/app/*"], "@demo/*": ["src/packages/demo/*"] },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
     // Language and environment

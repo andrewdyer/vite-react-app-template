@@ -1,4 +1,4 @@
-name: Frontend CI
+name: Continuous Integration
 
 on:
   push:
@@ -16,10 +16,12 @@ jobs:
 
   test:
     uses: andrewdyer/github-workflows/.github/workflows/test.yml@main
+    needs: build
     with:
       package-manager: yarn
 
   typecheck:
     uses: andrewdyer/github-workflows/.github/workflows/type-check.yml@main
+    needs: build
     with:
       package-manager: yarn

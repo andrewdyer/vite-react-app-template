@@ -58,7 +58,7 @@ src/
 
 The `app/` directory contains core application code, including the main `App` component, providers and router configuration. These elements collectively establish the application's structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
-The `packages/` directory is designed for feature-specific code. Each feature is organized into its own subfolder (e.g., `demo/`), containing related components. You're not limited to any structure — feel free to add folders or adjust as needed for your feature. This modular approach ensures that each feature remains encapsulated and easy to maintain, promoting scalability as the project grows.
+The `packages/` directory is designed for feature-specific code. Each package is organized into its own subfolder (e.g., `demo/`), containing related components. You're not limited to any structure — feel free to add folders or adjust as needed for your package. This modular approach ensures that each package remains encapsulated and easy to maintain, promoting scalability as the project grows.
 
 To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@package-name` patterns are used for subdirectories in `packages/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
 

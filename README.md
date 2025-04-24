@@ -4,15 +4,15 @@
 
 A template for building frontend applications using [Vite](https://vitejs.dev/) and [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/).
 
-## License
+## ⚖️ License
 
 Licensed under the [MIT license](https://opensource.org/licenses/MIT) and is free for private or commercial projects.
 
-## Introduction
+## ✨ Introduction
 
 This template enhances the official Vite template for React with TypeScript and SWC (Speedy Web Compiler) by integrating additional tools and configurations, while implementing an architecture that focuses on clarity, modularity, and maintainability. It serves the purpose of providing a solid foundation to help you hit the ground running and save valuable time when starting a new project.
 
-## Prerequisites
+## 📋 Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
@@ -20,7 +20,7 @@ Before you begin, ensure you have met the following requirements:
 - **Yarn**: Dependency management tool for Node.js.
 - **Docker** (optional): For containerizing the application.
 
-## Features
+## 🛠️ Features
 
 This template includes the following additional tools and configurations:
 
@@ -33,7 +33,7 @@ This template includes the following additional tools and configurations:
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing, building, and type-checking.
 - [Docker](https://www.docker.com/) support for containerizing the application.
 
-## Architecture
+## 🏗️ Architecture
 
 The primary source code is located in the `src/` folder, organized into two key directories: `app/` and `packages/`.
 
@@ -62,7 +62,7 @@ The `packages/` directory is designed for feature-specific code. Each package is
 
 To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@package-name` patterns are used for subdirectories in `packages/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
 
-## Getting Started
+## 🚀 Getting Started
 
 If you like what you've seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button at the top of the repository on GitHub.
 
@@ -99,7 +99,7 @@ Your development environment is now ready and your application is running at htt
 
 > Note: For a more in-depth setup guide, including details on running tests and Storybook, check out the [development setup](./CONTRIBUTING.md#development-setup) section in the contributing documentation.
 
-## Docker Support
+## 🐳 Dockerizing
 
 You can containerize your application with Docker for consistent deployment across environments.
 
@@ -121,6 +121,6 @@ You can containerize your application with Docker for consistent deployment acro
 
 Your application will now be accessible at http://localhost:8080.
 
-## Contributing
+## 🤝 Contributing
 
 Before contributing to this project, please refer to the [contributing](./CONTRIBUTING.md) documentation.

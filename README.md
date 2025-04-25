@@ -16,9 +16,9 @@ This template enhances the official Vite template for React with TypeScript and 
 
 Before you begin, ensure you have met the following requirements:
 
-- **Node.js**: Version 20.x (as specified in [.nvmrc](.nvmrc)) is required.
-- **Yarn**: Dependency management tool for Node.js.
-- **Docker** (optional): For containerizing the application.
+- **[Node.js](https://nodejs.org/)**: Version 20.x (as specified in [.nvmrc](.nvmrc)) is required.
+- **[Yarn](https://yarnpkg.com/)**: Dependency management tool for Node.js.
+- **[Docker](https://www.docker.com/)** (optional): For containerizing the application.
 
 ## 🛠️ Features
 

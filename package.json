@@ -22,9 +22,6 @@
     "test:e2e:ui": "npx playwright test --ui",
     "type-check": "tsc --noEmit"
   },
-  "lint-staged": {
-    "*": "prettier --ignore-unknown --write"
-  },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -65,6 +62,9 @@
     "vite": "^6.0.1",
     "vite-plugin-pwa": "^0.21.1",
     "vitest": "^2.1.8"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
   },
   "eslintConfig": {
     "extends": [

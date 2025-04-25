@@ -55,20 +55,32 @@ Use clear, descriptive commit messages following the [Conventional Commits](http
 
 ## Testing
 
-Please write tests for any new features or modifications to the project. Follow these steps to ensure your tests are effective and consistent:
+Please write tests for any new features or modifications to the project. Follow these steps to ensure your tests are effective, consistent, and easy to maintain:
 
-- Use `yarn test` to run the tests.
-- Check coverage using `yarn test:coverage` to ensure all tests pass.
-- For an interactive testing experience, use Vitest UI with `yarn test:ui`.
+### Unit & Component Tests
 
-For consistency and modularity, organize test code into structured sections:
+- Use the `.test.ts(x)` naming convention for unit and component tests.
+- Run tests with `yarn test`.
+- Check code coverage using `yarn test:coverage`.
+- For an interactive experience, launch Vitest UI via `yarn test:ui`.
 
-- Start by mocking dependencies or libraries.
-- Create helper functions to streamline repetitive logic.
+### End-to-End (E2E) Tests
+
+- Use the `.spec.ts(x)` naming convention for E2E tests.
+- Run E2E tests using `yarn test:e2e`.
+- For debugging or exploring flows, use Playwright UI via `yarn test:e2e:ui`.
+
+### Testing Guidelines
+
+When writing tests:
+
+- Mock dependencies or libraries as needed.
+- Use helper functions to simplify repetitive logic.
 - Define constants for mock data or configurations.
-- Structure the main test suite using `describe` blocks and focused test cases.
+- Use `describe` blocks to structure test suites and keep tests focused.
+- Prioritize readability, reusability, and clarity
 
-Ensure tests are clear, reusable, and easy to maintain before submitting changes.
+Before submitting changes, ensure **all tests pass** and coverage is maintained.
 
 ## Building
 

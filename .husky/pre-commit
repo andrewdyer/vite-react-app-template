@@ -1,1 +1,4 @@
-yarn lint && yarn format && yarn type-check && yarn test
+yarn lint && \
+yarn format && \
+yarn type-check && \
+yarn test:coverage

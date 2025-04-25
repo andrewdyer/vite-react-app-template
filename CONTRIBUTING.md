@@ -11,7 +11,8 @@ Thank you for your interest in contributing! We welcome improvements and suggest
 5. [Commit Guidelines](#commit-guidelines)
 6. [Testing](#testing)
 7. [Building](#building)
-8. [Submitting Changes](#submitting-changes)
+8. [Dockerizing](#dockerizing)
+9. [Submitting Changes](#submitting-changes)
 
 ## Code of Conduct
 
@@ -90,6 +91,20 @@ Use the following commands as needed to build and preview the project:
 - Build the project for production using TypeScript and Vite with `yarn build`.
 - Generate a static Storybook build with `yarn build:storybook`.
 - Preview the production build locally using Vite with `yarn preview`.
+
+## Dockerizing
+
+Use the following commands to containerize your application for consistent deployment across environments:
+
+1. Build the Docker image using:
+
+   `docker build -t <image-name> .`
+
+2. Start the container and map ports:
+
+   `docker run --name <container-name> -p 8080:80 -d <image-name>`
+
+Your application will now be accessible at http://localhost:8080.
 
 ## Submitting Changes
 

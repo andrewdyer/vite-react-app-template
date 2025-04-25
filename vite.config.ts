@@ -8,6 +8,9 @@ export const alias = {
   '@demo': resolve(__dirname, 'src/packages/demo'),
 };
 
+/**
+ * See https://vitejs.dev/config.
+ */
 export default defineConfig({
   plugins: [
     react(),

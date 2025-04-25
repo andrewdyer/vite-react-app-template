@@ -25,6 +25,7 @@ Before you begin, ensure you have met the following requirements:
 This template includes the following additional tools and configurations:
 
 - [Vitest](https://vitest.dev/) for unit testing, along with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing React components, Vitest UI, and coverage reports.
+- [Playwright](https://playwright.dev/) for end-to-end testing with UI and coverage support.
 - [Storybook](https://storybook.js.org/) for building and testing UI components in isolation.
 - [React Router](https://reactrouter.com/) for client-side routing.
 - [Vite PWA](https://vite-pwa-org.netlify.app/) (Progressive Web App) support for offline capabilities and better performance on mobile devices.

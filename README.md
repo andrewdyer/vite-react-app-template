@@ -67,61 +67,6 @@ To simplify imports and maintain organization, path aliases are configured in bo
 
 If you like what you've seen so far and think this setup fits your needs, you can quickly get started by clicking the **Use this template** button at the top of the repository on GitHub.
 
-### Quick Start
-
-Once you've created your project, follow these steps to get up and running:
-
-1. **Clone Your Repository**
-
-   Clone your repository and navigate into the project directory:
-
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_PROJECT.git
-   cd YOUR_PROJECT
-   ```
-
-2. **Install Dependencies**
-
-   Ensure you have the [required tools](#-prerequisites) installed and then run:
-
-   ```bash
-   yarn install
-   ```
-
-3. **Start the Development Server**
-
-   Start the Vite development server:
-
-   ```bash
-   yarn start
-   ```
-
-Your development environment is now ready and your application is running at http://localhost:5173.
-
-> Note: For a more in-depth setup guide, including details on running tests and Storybook, check out the [development setup](./CONTRIBUTING.md#development-setup) section in the contributing documentation.
-
-## 🐳 Dockerizing
-
-You can containerize your application with Docker for consistent deployment across environments.
-
-1. **Build the Docker Image**
-
-   Build the Docker image using the Dockerfile in the project root:
-
-   ```bash
-   docker build -t vite-react-app-template .
-   ```
-
-2. **Run the Docker Container**
-
-   Start a container from the built image, mapping port `80` in the container to port `8080` on your local machine:
-
-   ```bash
-   docker run --name vite-react-app -p 8080:80 -d vite-react-app-template
-   ```
-
-Your application will now be accessible at http://localhost:8080.
-
 ## 🤝 Contributing
 
-Before contributing to this project, please refer to the [contributing](./CONTRIBUTING.md) documentation.
+Before contributing to this project, please refer to the [contributing](./CONTRIBUTING.md) documentation for a more in-depth setup guide, including details on running tests, Storybook, coding standards, and the pull request process.

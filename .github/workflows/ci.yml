@@ -14,8 +14,14 @@ jobs:
     with:
       package-manager: yarn
 
-  test:
+  test-unit:
     uses: andrewdyer/github-workflows/.github/workflows/test.yml@main
+    needs: build
+    with:
+      package-manager: yarn
+
+  test-e2e:
+    uses: andrewdyer/github-workflows/.github/workflows/playwright.yml@main
     needs: build
     with:
       package-manager: yarn

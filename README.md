@@ -1,4 +1,4 @@
-![Vite + React App Template](https://raw.githubusercontent.com/andrewdyer/andrewdyer/refs/heads/main/assets/images/covers/vite-react-app-template.png)
+![Vite + React App Template](https://raw.githubusercontent.com/andrewdyer/public-assets/refs/heads/main/images/covers/vite-react-app-template.png)
 
 # Vite + React App Template
 

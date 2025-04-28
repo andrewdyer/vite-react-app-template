@@ -1,5 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
+// URL for the development server, used as both the baseURL for tests and the webServer URL.
+const devServerURL: string = 'http://localhost:5173';
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -11,7 +14,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:5173',
+    baseURL: devServerURL,
     trace: 'on-first-retry',
   },
 
@@ -56,7 +59,7 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   webServer: {
     command: 'yarn start',
-    url: 'http://localhost:5173',
+    url: devServerURL,
     reuseExistingServer: !process.env.CI,
   },
 });

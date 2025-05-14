@@ -3,12 +3,12 @@ import { Router } from '@/router';
 
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <Providers>
       <Router />
     </Providers>
   );
-}
+};
 
 export default App;

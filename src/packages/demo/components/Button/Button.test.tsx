@@ -14,29 +14,25 @@ describe('Button', () => {
   test('should render button with label', () => {
     renderComponent();
 
-    const buttonElement = screen.getByText(/click me/i);
-    expect(buttonElement).toBeInTheDocument();
+    expect(screen.getByText(/click me/i)).toBeInTheDocument();
   });
 
   test('should apply correct size class for small', () => {
     renderComponent({ size: 'small' });
 
-    const buttonElement = screen.getByText(/click me/i);
-    expect(buttonElement).toHaveClass('button--small');
+    expect(screen.getByText(/click me/i)).toHaveClass('button--small');
   });
 
   test('should apply correct size class for medium', () => {
     renderComponent({ size: 'medium' });
 
-    const buttonElement = screen.getByText(/click me/i);
-    expect(buttonElement).toHaveClass('button--medium');
+    expect(screen.getByText(/click me/i)).toHaveClass('button--medium');
   });
 
   test('should apply correct size class for large', () => {
     renderComponent({ size: 'large' });
 
-    const buttonElement = screen.getByText(/click me/i);
-    expect(buttonElement).toHaveClass('button--large');
+    expect(screen.getByText(/click me/i)).toHaveClass('button--large');
   });
 
   test('should call onClick handler when clicked', () => {
@@ -44,8 +40,8 @@ describe('Button', () => {
 
     renderComponent({ onClick: mockOnClick });
 
-    const buttonElement = screen.getByText(/click me/i);
-    fireEvent.click(buttonElement);
+    fireEvent.click(screen.getByText(/click me/i));
+
     expect(mockOnClick).toHaveBeenCalledTimes(1);
   });
 });

@@ -6,7 +6,7 @@ const defaultProps: ProvidersProps = {
   children: <div data-testid="mock-component">Test Child</div>,
 };
 
-const renderComponent = (props: ProvidersProps = defaultProps) => {
+const renderComponent = (props: Partial<ProvidersProps> = {}) => {
   return render(<Providers {...defaultProps} {...props} />);
 };
 

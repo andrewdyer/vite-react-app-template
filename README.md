@@ -43,7 +43,6 @@ Here's a breakdown of the directory structure:
 ```plaintext
 src/
 ├── app/                     # Core application code
-│   ├── providers/           # Context providers
 │   ├── router/              # Application routing
 │   ├── App.tsx              # Main App component
 │   └── index.tsx            # Entry point of the application
@@ -57,7 +56,7 @@ src/
 └── setupTests.ts            # Test setup file
 ```
 
-The `app/` directory contains core application code, including the main `App` component, providers and router configuration. These elements collectively establish the application's structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
+The `app/` directory contains core application code, including the main `App` component and router configuration. These elements collectively establish the application's structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
 
 The `packages/` directory is designed for feature-specific code. Each package is organized into its own subfolder (e.g., `demo/`), containing related components. You're not limited to any structure — feel free to add folders or adjust as needed for your package. This modular approach ensures that each package remains encapsulated and easy to maintain, promoting scalability as the project grows.
 

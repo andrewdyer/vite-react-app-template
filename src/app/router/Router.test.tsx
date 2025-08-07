@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { renderWithProviders } from '@/utils/testing';
 
-import { MemoryRouter } from 'react-router-dom';
+import { screen } from '@testing-library/react';
 
 import Router from './Router';
 
@@ -14,17 +14,9 @@ vi.mock('@demo/pages', async () => {
   };
 });
 
-const renderComponent = (initialEntries: string[] = ['/']) => {
-  return render(
-    <MemoryRouter initialEntries={initialEntries}>
-      <Router />
-    </MemoryRouter>
-  );
-};
-
 describe('Router', () => {
   test('should render the Home component when navigating to the root path', () => {
-    renderComponent();
+    renderWithProviders(<Router />, { initialEntries: ['/'] });
 
     const mockHomePage = screen.getByTestId('mock-home-page');
     expect(mockHomePage).toBeInTheDocument();

@@ -34,33 +34,38 @@ This template includes the following additional tools and configurations:
 - CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated testing, building, and type-checking.
 - [Docker](https://www.docker.com/) support for containerizing the application.
 
-## 🏗️ Architecture
+🏗️ Architecture
 
-The primary source code is located in the `src/` folder, organized into two key directories: `app/` and `packages/`.
-
-Here's a breakdown of the directory structure:
+The primary source code lives in the `src/` folder, organized into several key directories:
 
 ```plaintext
 src/
-├── app/                     # Core application code
-│   ├── router/              # Application routing
-│   ├── App.tsx              # Main App component
-│   └── index.tsx            # Entry point of the application
+├── app/                # Core App component and related files
+│   ├── App.tsx         # App component (sets up routing)
+│   ├── App.css         # App component styles
+│   ├── App.test.tsx    # App component tests
+│   └── index.ts        # App component exports
 │
-├── packages/                # Feature-specific code
-│   └── demo/                # Demo package
-│       ├── assets/          # Static assets for the demo package
-│       ├── components/      # Components specific to the demo package
-│       └── pages/           # Pages specific to the demo package
+├── components/         # Reusable UI components (Button, Counter, etc.)
+│   └── ...
 │
-└── setupTests.ts            # Test setup file
+├── pages/              # Application pages (Home, etc.)
+│   └── ...
+│
+├── utils/              # Utility functions and helpers
+│   └── ...
+│
+├── index.css           # Global styles
+├── main.tsx            # Application entry point
+├── setupTests.ts       # Test setup file
+└── vite-env.d.ts       # Vite environment types
 ```
 
-The `app/` directory contains core application code, including the main `App` component and router configuration. These elements collectively establish the application's structure. The `index.tsx` file serves as the entry point, where the `App` component is rendered into the DOM.
+The application entry point is `main.tsx`, which renders the App component and serves as the central place to wrap it with global providers such as client-side routing, state management, or theming. This ensures that cross-cutting concerns are consistently applied across the entire app.
 
-The `packages/` directory is designed for feature-specific code. Each package is organized into its own subfolder (e.g., `demo/`), containing related components. You're not limited to any structure — feel free to add folders or adjust as needed for your package. This modular approach ensures that each package remains encapsulated and easy to maintain, promoting scalability as the project grows.
+Within `src/`, the `app/` directory contains the core `App` component, responsible for setting up client-side routing and defining application pages. Reusable UI elements live in `components/`, while top-level views like Home are placed in `pages/`. General-purpose helpers and utilities are organized under `utils/`, and `index.css` defines global styles. This structure is meant as a starting point rather than a limitation — feel free to add or reorganize folders as needed. Its modular approach helps keep concerns encapsulated and makes the codebase easier to maintain and scale over time. Supporting files include `setupTests.ts`, which configures the testing environment, and `vite-env.d.ts`, which defines Vite environment types.
 
-To simplify imports and maintain organization, path aliases are configured in both `vite.config.ts` and `tsconfig.app.json`. By default, the `@` alias points to `app/`, and `@package-name` patterns are used for subdirectories in `packages/` (e.g., `@demo`). These aliases help keep imports clean, consistent, and scalable as the project grows.
+To simplify imports and keep the codebase organized, path aliases are configured in `vite.config.ts`, `tsconfig.app.json`, and `vitest.config.ts`. By default, the `@` alias points to the `src/` directory, allowing clean imports. This approach keeps imports consistent and scalable as the project grows.
 
 ## 🚀 Getting Started
 

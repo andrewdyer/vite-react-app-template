@@ -1,13 +1,14 @@
 import { defineConfig } from 'vitest/config';
-
-import { alias } from './vite.config';
+import { resolve } from 'path';
 
 /**
  * See https://vitest.dev/config.
  */
 export default defineConfig({
   resolve: {
-    alias,
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
   },
   test: {
     environment: 'jsdom',

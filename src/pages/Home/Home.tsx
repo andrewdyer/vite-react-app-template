@@ -1,6 +1,8 @@
-import reactLogo from '@demo/assets/react.svg';
-import viteLogo from '@demo/assets/vite.svg';
-import { Counter } from '@demo/components';
+import reactLogo from '@/assets/react.svg';
+
+import viteLogo from '@/assets/vite.svg';
+
+import { Counter } from '@/components';
 
 import './Home.css';
 

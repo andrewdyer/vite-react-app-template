@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react-vite';
 
-import '../src/app/index.css';
+import '../src/index.css';
 
 import { withMemoryRouter } from './decorators';
 
